@@ -1,0 +1,70 @@
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Упражнение 1</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="left_menu">
+            <a href="../index.html" class="home">На главную</a>
+        </div>
+
+        <div class="task">
+            <h1>1) Рисование линий с помощью метода lineTo() объекта canvas</h1>
+            <canvas id="task_1_1" width="300" height="300" class="canvas_square"></canvas>
+            <script>
+                let canvas_1_1 = document.getElementById('task_1_1');
+                let ctx = canvas_1_1.getContext('2d');
+
+
+                ctx.beginPath();
+                ctx.strokeStyle = "black";
+                ctx.lineWidth = "2";
+                ctx.moveTo(25, 25);
+                ctx.lineTo(250, 25);
+                ctx.stroke();
+
+                ctx.beginPath();
+                ctx.strokeStyle = "green";
+                ctx.lineWidth = "3";
+                ctx.moveTo(25, 75);
+                ctx.lineTo(175, 200);
+                ctx.stroke();
+
+                ctx.beginPath();
+                ctx.strokeStyle = "blue";
+                ctx.lineWidth = "2";
+                ctx.moveTo(275, 50);
+                ctx.lineTo(175, 275);
+                ctx.stroke();
+            </script>
+
+            <h1>1) Рисование фигур с помощью метода fillRect() объекта canvas</h1>
+            <canvas id="task_1_2" width="600" height="300" class="canvas_square"></canvas>
+            <script>
+                let canvas_1_2 = document.getElementById('task_1_2');
+                let pen = canvas_1_2.getContext('2d');
+
+
+                pen.beginPath();
+                pen.fillStyle = "green";
+                pen.fillRect(25, 25, 150, 150);
+
+                pen.beginPath();
+                pen.fillStyle = "red";
+                pen.fillRect(200, 75, 100, 200);
+
+                pen.beginPath();
+                pen.strokeStyle = "blue";
+                pen.lineWidth = "10";
+                pen.strokeRect(350, 50, 225, 150);
+            </script>
+
+    </main>
+</body>
+
+</html>
