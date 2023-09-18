@@ -17,44 +17,75 @@
         <div class="task">
             <h1 class="tit">Задача 1</h1>
             <h1>1) Калькулятор цветовых моделей</h1>
-            <div id="ccm_canvas"></div>
-            <div class="ccm_back">
-                <div class="container">
-                    <label for="rgb">RGB</label>
-                    <input id="rgb" type="text" value="rgb(0, 0, 0);">
-                    <div class="subcont">
-                        <input model="rgb" type="number" value="0" min="0" max="255">
-                        <input model="rgb" type="number" value="0" min="0" max="255">
-                        <input model="rgb" type="number" value="0" min="0" max="255">
+            <div class="ccm-flex">
+                <div id="ccm_canvas"></div>
+                <div class="ccm_back">
+                    <div class="container">
+                        <label for="rgb">RGB</label>
+                        <input id="rgb" type="text" value="rgb(0, 0, 0);">
+                        <div class="subcont">
+                            <input model="rgb" type="number" value="0" min="0" max="255">
+                            <input model="rgb" type="number" value="0" min="0" max="255">
+                            <input model="rgb" type="number" value="0" min="0" max="255">
+                        </div>
                     </div>
-                </div>
 
-                <div class="container">
-                    <label for="hsv">HSV</label>
-                    <input id="hsv" type="text" value="0, 0%, 0%">
-                    <div class="subcont">
-                        <input model="hsv" type="number" value="0" min="0" max="360">
-                        <input model="hsv" type="number" value="0" min="0" max="100">
-                        <input model="hsv" type="number" value="0" min="0" max="100">
+                    <div class="container">
+                        <label for="hsv">HSV</label>
+                        <input id="hsv" type="text" value="0, 0%, 0%">
+                        <div class="subcont">
+                            <input model="hsv" type="number" value="0" min="0" max="360">
+                            <input model="hsv" type="number" value="0" min="0" max="100">
+                            <input model="hsv" type="number" value="0" min="0" max="100">
+                        </div>
                     </div>
-                </div>
 
-                <div class="container">
-                    <label for="cmyk">CMYK</label>
-                    <input id="cmyk" type="text" value="0, 0, 0, 100">
-                    <div class="subcont">
-                        <input model="cmyk" type="number" value="0" min="0" max="100">
-                        <input model="cmyk" type="number" value="0" min="0" max="100">
-                        <input model="cmyk" type="number" value="0" min="0" max="100">
-                        <input model="cmyk" type="number" value="100" min="0" max="100">
+                    <div class="container">
+                        <label for="hsl">HSL</label>
+                        <input id="hsl" type="text" value="0, 0%, 0%">
+                        <div class="subcont">
+                            <input model="hsl" type="number" value="0" min="0" max="360">
+                            <input model="hsl" type="number" value="0" min="0" max="100">
+                            <input model="hsl" type="number" value="0" min="0" max="100">
+                        </div>
                     </div>
-                </div>
 
-                <div class="container">
-                    <label for="hex">HEX</label>
-                    <input id="hex" type="text" value="#000000">
-                </div>
+                    <div class="container">
+                        <label for="cmyk">CMYK</label>
+                        <input id="cmyk" type="text" value="0, 0, 0, 100">
+                        <div class="subcont">
+                            <input model="cmyk" type="number" value="0" min="0" max="100">
+                            <input model="cmyk" type="number" value="0" min="0" max="100">
+                            <input model="cmyk" type="number" value="0" min="0" max="100">
+                            <input model="cmyk" type="number" value="100" min="0" max="100">
+                        </div>
+                    </div>
 
+                    <div class="container">
+                        <label for="xyz">XYZ</label>
+                        <div class="subcont">
+                            <input model="xyz" type="number" value="0" min="0" max="100">
+                            <input model="xyz" type="number" value="0" min="0" max="100">
+                            <input model="xyz" type="number" value="0" min="0" max="100">
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <label for="lab">LAB</label>
+                        <div class="subcont">
+                            <input model="lab" type="number" value="0" min="0" max="100">
+                            <input model="lab" type="number" value="0" min="-128" max="128">
+                            <input model="lab" type="number" value="0" min="-128" max="128">
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <label for="hex">HEX</label>
+                        <input id="hex" type="text" value="#000000">
+                    </div>
+
+                </div>
+                
             </div>
 
     </main>

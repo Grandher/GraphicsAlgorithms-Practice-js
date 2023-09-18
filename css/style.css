@@ -173,8 +173,13 @@ main {
 /*canvas*/
 
 /*calc color models*/
+.ccm-flex {
+    display: flex;
+    align-items: center;
+}
+
 #ccm_canvas {
-    width: 470px;
+    min-width: 470px;
     height: 470px;
     margin: 20px;
     background-color: #000;
@@ -184,7 +189,8 @@ main {
 }
 
 .ccm_back {
-    width: 470px;
+    min-width: 470px;
+    margin-left: 100px;
 }
 
 .container {
