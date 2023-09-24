@@ -1,0 +1,43 @@
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Упражнение 4</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/jquery-3.6.3.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="left_menu">
+            <a href="../index.html" class="home">На главную</a>
+        </div>
+
+        <div class="task">
+            <h1 class="tit">Задача 1</h1>
+            <h1>1) Кривая Коха</h1>
+            <canvas id="task_4_1" width="300" height="325" class="canvas_square"></canvas>
+
+            <h1>2) Треугольник Серпинского</h1>
+            <canvas id="task_4_2" width="600" height="300" class="canvas_square"></canvas>
+            <input type="range" id="SierpinskiSlider" orient="vertical" min="1" max="10" value="4">
+            <span id="SierpinskiValue">4</span>
+
+            <h1>3) Фрактальное дерево</h1>
+            <canvas id="task_4_3" width="600" height="300" class="canvas_square"></canvas>
+            <input type="range" id="treeSlider" orient="vertical" min="1" max="15" value="4">
+            <span id="treeValue">4</span>
+
+            <h1>3) Множество Мандельброта</h1>
+            <canvas id="task_4_4" width="600" height="400" class="canvas_square"></canvas>
+            <input type="range" id="zoomSlider" orient="vertical" min="100" max="5000" value="100">
+            <input type="number" id="xSlider" orient="vertical" min="-50" max="50" value="0">
+            <input type="number" id="ySlider" orient="vertical" min="-50" max="50" value="0">
+            <!-- <span id="lastValue">4</span> -->
+
+    </main>
+    <script src="../js/js-4.js"></script>
+</body>
+
+</html>

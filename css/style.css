@@ -238,3 +238,14 @@ input[type='number']::-webkit-inner-spin-button {
 }
 
 /*calc color models*/
+
+/*фракталы*/
+
+input[type=range][orient=vertical] {
+    appearance: slider-vertical;
+    width: 20px;
+    height: 300px;
+    padding: 0px 20px;
+}
+
+/*фракталы*/
