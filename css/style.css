@@ -249,3 +249,12 @@ input[type=range][orient=vertical] {
 }
 
 /*фракталы*/
+
+.imageFlex {
+    width: 96vw;
+    margin: auto;
+    display: flex;
+}
+.imageFlex img, .imageFlex canvas {
+    width: 50%;
+}
